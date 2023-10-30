@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Tahoma;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+a, button {
+  cursor: pointer;
+}
+ul li {
+  list-style-type: none;
+}
+input,textarea {
+  border: none;
+  outline: none;
+}

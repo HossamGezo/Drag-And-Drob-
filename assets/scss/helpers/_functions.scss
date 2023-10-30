@@ -1,0 +1,9 @@
+// Using Variables & Mixins Files
+@use "variables" as *;
+@use "mixins" as *;
+
+// Start Functions
+
+@function color($color) {
+  @return map-get($color-breakpoints, $color);
+}

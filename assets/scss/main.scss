@@ -1,0 +1,74 @@
+// Using All Helpers Directory Contents
+@use "helpers/usinghelpers" as *;
+
+// Main Project
+body {
+  background-color: color(main-color);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.main-box {
+  width: 30rem;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: color(text-color);
+  text-align: center;
+  h1 {
+    text-transform: capitalize;
+  }
+  input {
+    display: block;
+    margin: 1rem auto;
+    width: 300px;
+    padding: 0.5rem;
+    border: 1px solid color(main-color);
+    border-radius: 0.5rem;
+    caret-color: color(main-color);
+  }
+  button {
+    width: 300px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    background-color: color(main-color);
+    color: color(text-color);
+    font-weight: bold;
+  }
+}
+.boxs {
+  @include flex(null, null, space-between, flex-start, null);
+  .box {
+    width: 20rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: color(text-color);
+    text-transform: capitalize;
+    h2 {
+      position: relative;
+      width: fit-content;
+    }
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.15rem;
+      width: 70%;
+      height: 2px;
+      background-color: color(main-color);
+    }
+    .item {
+      width: 90%;
+      background-color: color(main-color);
+      padding: 0.5rem 0.7rem;
+      outline: 1px solid color(main-color);
+      border-radius: 0.3rem;
+      color: color(text-color);
+      margin: 10px 0;
+      cursor: move;
+    }
+  }
+}

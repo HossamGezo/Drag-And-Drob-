@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: #867FFE;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.main-box {
+  width: 30rem;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+.main-box h1 {
+  text-transform: capitalize;
+}
+.main-box input {
+  display: block;
+  margin: 1rem auto;
+  width: 300px;
+  padding: 0.5rem;
+  border: 1px solid #867FFE;
+  border-radius: 0.5rem;
+  caret-color: #867FFE;
+}
+.main-box button {
+  width: 300px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  background-color: #867FFE;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.boxs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.boxs .box {
+  width: 20rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #FFFFFF;
+  text-transform: capitalize;
+}
+.boxs .box h2 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.boxs .box h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.15rem;
+  width: 70%;
+  height: 2px;
+  background-color: #867FFE;
+}
+.boxs .box .item {
+  width: 90%;
+  background-color: #867FFE;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.3rem;
+  color: #FFFFFF;
+  margin: 10px 0;
+  cursor: move;
+  outline: 1px solid #867FFE;
+}/*# sourceMappingURL=main.css.map */
